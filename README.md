@@ -1,149 +1,143 @@
-# 🤖 RG AutoMod — Advanced Discord Link Moderation Bot  
-Fast • Secure • Automatic • Zero Configuration Needed
+<h1 align="center">🤖 RG AutoMod</h1>
+<p align="center">
+  <b>Advanced Discord Link Moderation • Fast • Secure • Automatic</b><br>
+  Zero configuration. Maximum protection.
+</p>
 
-![Status](https://img.shields.io/badge/Bot-Live-brightgreen)
-![Docs](https://img.shields.io/badge/Documentation-Complete-blue)
-![License](https://img.shields.io/badge/License-Proprietary-red)
-![Support](https://img.shields.io/badge/Support-Server-7289da?logo=discord)
+<p align="center">
+  <img src="https://img.shields.io/badge/Bot-Live-brightgreen" />
+  <img src="https://img.shields.io/badge/Documentation-Complete-blue" />
+  <img src="https://img.shields.io/badge/License-Proprietary-red" />
+  <img src="https://img.shields.io/badge/Support-Server-7289da?logo=discord" />
+</p>
 
-RG AutoMod is a high-performance Discord moderation bot designed to automatically detect and block unwanted links, prevent spam or scam URLs, and protect communities with zero setup required.  
-It includes smart link filtering, trusted-user controls, channel allowlisting, custom whitelist support, link logging, optional punishment systems, and persistent data storage — all through clean and simple slash commands.
-
-This repository contains **documentation only**.  
-The bot’s source code is **private** and protected under a proprietary license.
+<p align="center">
+RG AutoMod is a professional-grade Discord moderation bot designed to eliminate unwanted links, scams, and spam—automatically and intelligently.
+</p>
 
 ---
 
-## 🚀 Invite RG AutoMod
-
-Add the bot to your server using the official custom invite URL:
+## 🚀 Invite RG AutoMod  
+**Add the bot to your server:**
 
 👉 **https://invite-rgautomod.rixstongamer.xyz**
 
 ---
 
-## 🌟 Key Features
+## 🌟 What Makes RG AutoMod Different?
 
-### 🔗 Automatic Link Blocking  
-- Instantly detects and removes unwanted links  
-- Blocks scam URLs, unknown domains, Discord invites, self-promotion  
-- Keeps your server clean with zero admin effort  
+RG AutoMod delivers **premium link moderation** with real-time protection and powerful configuration options — all through smooth, clean Slash Commands.
+
+### 🔗 Smart Link Blocking  
+- Instant detection and removal  
+- Blocks scam URLs, suspicious domains, unwanted Discord invites  
+- Works automatically across all channels  
 
 ---
 
 ### 🔒 Protected Default Whitelist  
-Pre-approved safe domains such as:  
-- **rixstongamer.xyz**  
-- **rixxymc.in**  
-- Official YouTube & Instagram profiles  
+Built-in safe links, including:  
+- rixstongamer.xyz  
+- rixxymc.in  
+- Official social profiles  
 
-These protected entries cannot be removed.
+These defaults are secured and cannot be removed.
 
 ---
 
 ### 👤 Trusted User System  
-Allow selected users to bypass link restrictions.
+Give users controlled permission to post links:
 
-Supports:
-- **Permanent trust**
-- **Temporary trust** (15s, 30m, 1h, 2d, etc.)
+- **Permanent trust**  
+- **Temporary trust** (15s, 30m, 1h, 2d, etc.)  
 
-Perfect for moderators, creators, event winners, or verified members.
+Ideal for moderators, content creators, verified or event participants.
 
 ---
 
-### 📺 Channel Allowlist  
-Choose which channels allow link posting.  
-Useful for:
+### 📺 Channel Allowlisting  
+Choose exactly where links *are* allowed.
+
+Examples:
+- #promotions  
 - #media  
 - #clips  
-- #promotions  
 
-All other channels remain protected.
+Every other channel stays protected.
 
 ---
 
 ### 📋 Custom Whitelist  
-Admins can approve custom domains or URL patterns.
+Add your own allowed domains or patterns:
 
 Examples:
-- discord.gg  
-- twitter.com  
-- example.com/promo  
+- "discord.gg"
+- "twitter.com"
+- "example.com/promo"
 
-Supports:
-- Partial matches  
-- Case-insensitive patterns  
+Perfect for communities with specific link rules.
 
 ---
 
-### 📊 Link Deletion Logging  
-If enabled, every blocked link is logged with:
+### 📊 Moderation Logging  
+Track all blocked links with:
 - User  
 - Channel  
-- Message content  
-- Strike count (if punishment enabled)  
+- Full message  
+- Strike count  
 - Timestamp  
 
-Great for moderation teams and audits.
+Great for mod oversight.
 
 ---
 
-### ⚖️ Auto-Punishment System (Optional)
-Configurable strike-based moderation system.
+### ⚖️ Optional Punishment System  
+A configurable strike-based moderation layer:
 
-Features:
-- Strike limit  
-- Automatic timeout  
-- Auto-reset after timeout  
-- Manual strike reset  
+- Custom strike limits  
+- Automatic timeouts  
+- Auto-reset after punishment  
+- Manual admin reset  
 
-Useful for large public communities.
+Ideal for large or public servers.
 
 ---
 
 ### 💬 Custom Warning Messages  
-Customize the message shown when the bot blocks a link.
+Customize the message shown when a link is blocked.
 
 ---
 
-### 🔄 Dynamic Bot Status  
-Updates every 30 seconds displaying total active servers.  
-Example:
-
-```
-Watching 12 servers | /help
-```
+### 🔄 Dynamic Status  
+Bot updates activity every 30 seconds based on current server count.
 
 ---
 
-### 👋 Automatic Welcome Message  
-When joining a new server, the bot automatically sends:
-- Setup instructions  
-- Safe-link list  
-- Command reference  
-- Support link  
+### 👋 Automatic Welcome System  
+When joining a new server, RG AutoMod sends:
+- Quick setup steps  
+- Safe link list  
+- Commands overview  
+- Support reference  
 
 ---
 
 ### 💾 Persistent Storage  
-All settings save automatically:
+All server settings are saved automatically:
+- Whitelists  
 - Trusted users  
-- Temporary trust expiry  
 - Allowed channels  
-- Custom whitelist  
-- Logging settings  
+- Strike data  
+- Logging channels  
 - Warning messages  
-- Punishment configuration  
-- Strike counters  
 
-Everything reloads on startup — no manual setup required.
+Your configuration stays intact across restarts.
 
 ---
 
 ## 📚 Documentation
 
-All documentation is inside the `/docs` directory:
+All detailed docs are available inside the `/docs` folder:
 
 | Topic | File |
 |-------|------|
@@ -159,22 +153,23 @@ All documentation is inside the `/docs` directory:
 
 ## 🔐 License
 
-RG AutoMod is a **closed-source proprietary project**.  
-The bot’s internal code may **not** be copied, modified, redistributed, or reverse-engineered.  
-Documentation is public for reference only.
+RG AutoMod is a **closed-source, proprietary project**.  
+The bot’s internal code may not be copied, redistributed, modified, or reverse-engineered.  
+All documentation in this repository is available for user guidance only.
 
-For special permission or licensing inquiries, please contact the project owner.
-
----
-
-## 🆘 Support
-
-Need help?
-
-Join the official support server:
-
-👉 **https://dsc.gg/rixstongamer**
+For special licensing permissions or business inquiries, contact the project owner.
 
 ---
 
-Created with ❤️ by **RixStonGamer**
+## 🆘 Support & Community
+
+Need help or want to report an issue?
+
+👉 **Join the official support server:**  
+https://dsc.gg/rixstongamer
+
+---
+
+<p align="center">
+  Made with ❤️ by <b>RixStonGamer</b>
+</p>
