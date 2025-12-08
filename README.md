@@ -1,7 +1,7 @@
 <h1 align="center">🤖 RG AutoMod</h1>
 <p align="center">
-  <b>Advanced Discord Link Moderation • Fast • Secure • Automatic</b><br>
-  Zero configuration. Maximum protection.
+  <b>Advanced Discord Link Moderation • Fast • Secure • Automated</b><br>
+  A premium-quality bot designed to protect your Discord server from unwanted links, scams, spam, and self-promotion.
 </p>
 
 <p align="center">
@@ -12,132 +12,165 @@
 </p>
 
 <p align="center">
-RG AutoMod is a professional-grade Discord moderation bot designed to eliminate unwanted links, scams, and spam—automatically and intelligently.
+Last Updated: December 2025
 </p>
 
 ---
 
-## 🚀 Invite RG AutoMod  
-**Add the bot to your server:**
+# 📑 Table of Contents
+- [✨ Overview](#-overview)
+- [🚀 Invite RG AutoMod](#-invite-rg-automod)
+- [🌟 Key Features](#-key-features)
+- [📚 Documentation](#-documentation)
+- [⚙️ Technical Info](#️-technical-info)
+- [🔐 License](#-license)
+- [🛡 Legal & Policies](#-legal--policies)
+- [🆘 Support](#-support)
+- [❤️ Credits](#️-credits)
+
+---
+
+# ✨ Overview
+**RG AutoMod** is a high-performance Discord moderation bot built to automatically block unwanted links, scam URLs, spam, and unapproved promotions.
+
+It includes:
+- Trusted user permissions  
+- Channel allowlisting  
+- Custom whitelists  
+- Logging  
+- Optional punishment system  
+- Persistent server configuration  
+- Clean, modern Slash Commands  
+
+The bot is designed for **gaming communities, public servers, creators, and professional organizations** that want reliable, automated moderation with zero setup.
+
+This repository contains **documentation only**.  
+The bot’s source code is **private** and protected under a proprietary license.
+
+---
+
+# 🚀 Invite RG AutoMod
+Add the bot to your server using the official custom invite link:
 
 👉 **https://invite-rgautomod.rixstongamer.xyz**
 
 ---
 
-## 🌟 What Makes RG AutoMod Different?
+# 🌟 Key Features
 
-RG AutoMod delivers **premium link moderation** with real-time protection and powerful configuration options — all through smooth, clean Slash Commands.
-
-### 🔗 Smart Link Blocking  
-- Instant detection and removal  
-- Blocks scam URLs, suspicious domains, unwanted Discord invites  
-- Works automatically across all channels  
+### 🔗 Smart Automatic Link Blocking
+- Instantly detects and deletes harmful or unwanted links  
+- Blocks scam websites, Discord invites, self-promo, and suspicious domains  
+- Extremely fast link scanning  
 
 ---
 
 ### 🔒 Protected Default Whitelist  
-Built-in safe links, including:  
+Essential safe URLs are automatically approved, including:
 - rixstongamer.xyz  
 - rixxymc.in  
 - Official social profiles  
 
-These defaults are secured and cannot be removed.
+These cannot be removed.
 
 ---
 
 ### 👤 Trusted User System  
-Give users controlled permission to post links:
+Allow specific users to bypass link moderation:
+- Permanent trust  
+- Temporary trust (15s, 30m, 1h, 2d, etc.)  
 
-- **Permanent trust**  
-- **Temporary trust** (15s, 30m, 1h, 2d, etc.)  
-
-Ideal for moderators, content creators, verified or event participants.
+Ideal for moderators, creators, verified members, or event winners.
 
 ---
 
 ### 📺 Channel Allowlisting  
-Choose exactly where links *are* allowed.
-
-Examples:
-- #promotions  
+Choose where links *are allowed*:
 - #media  
+- #promotions  
 - #clips  
 
-Every other channel stays protected.
+Everywhere else remains protected automatically.
 
 ---
 
 ### 📋 Custom Whitelist  
-Add your own allowed domains or patterns:
+Approve your own domains or URL patterns.
 
 Examples:
-- "discord.gg"
-- "twitter.com"
-- "example.com/promo"
+- `discord.gg`
+- `twitter.com`
+- `example.com/promo`
 
-Perfect for communities with specific link rules.
+Supports:
+- Partial matching  
+- Case-insensitive patterns  
 
 ---
 
-### 📊 Moderation Logging  
-Track all blocked links with:
+### 📊 Link Deletion Logging  
+If enabled, logs include:
 - User  
 - Channel  
-- Full message  
+- Blocked message  
 - Strike count  
 - Timestamp  
 
-Great for mod oversight.
+Helpful for moderation teams.
 
 ---
 
-### ⚖️ Optional Punishment System  
-A configurable strike-based moderation layer:
-
+### ⚖️ Optional Strike-Based Punishment System
+Fully configurable:
 - Custom strike limits  
 - Automatic timeouts  
 - Auto-reset after punishment  
-- Manual admin reset  
+- Manual strike reset  
 
-Ideal for large or public servers.
-
----
-
-### 💬 Custom Warning Messages  
-Customize the message shown when a link is blocked.
+Perfect for large servers.
 
 ---
 
-### 🔄 Dynamic Status  
-Bot updates activity every 30 seconds based on current server count.
+### 💬 Custom Warning Messages
+Make link-block warnings match your server's style.
 
 ---
 
-### 👋 Automatic Welcome System  
-When joining a new server, RG AutoMod sends:
-- Quick setup steps  
-- Safe link list  
+### 🔄 Dynamic Status
+Updates every 30 seconds showing:
+```
+Watching X servers | /help
+```
+
+---
+
+### 👋 Automatic Welcome Message
+When the bot joins a new server, it automatically sends:
+- Setup steps  
+- Allowed link details  
 - Commands overview  
-- Support reference  
+- Support link  
 
 ---
 
-### 💾 Persistent Storage  
-All server settings are saved automatically:
-- Whitelists  
+### 💾 Persistent Configuration  
+All settings save automatically:
 - Trusted users  
+- Temporary trust expiry  
 - Allowed channels  
-- Strike data  
-- Logging channels  
+- Custom whitelists  
 - Warning messages  
+- Logging settings  
+- Punishment configuration  
+- Strike counters  
 
-Your configuration stays intact across restarts.
+Data reloads on bot restart.
 
 ---
 
-## 📚 Documentation
+# 📚 Documentation
 
-All detailed docs are available inside the `/docs` folder:
+All detailed documentation can be found in the `/docs` directory:
 
 | Topic | File |
 |-------|------|
@@ -151,25 +184,42 @@ All detailed docs are available inside the `/docs` folder:
 
 ---
 
-## 🔐 License
-
-RG AutoMod is a **closed-source, proprietary project**.  
-The bot’s internal code may not be copied, redistributed, modified, or reverse-engineered.  
-All documentation in this repository is available for user guidance only.
-
-For special licensing permissions or business inquiries, contact the project owner.
-
----
-
-## 🆘 Support & Community
-
-Need help or want to report an issue?
-
-👉 **Join the official support server:**  
-https://dsc.gg/rixstongamer
+# ⚙️ Technical Info
+- Language: Python  
+- Framework: discord.py  
+- Platform: Discord Bot API  
+- Storage: JSON-based persistent configuration  
+- Status update interval: 30 seconds  
+- Temporary trust refresh: every minute  
 
 ---
 
-<p align="center">
-  Made with ❤️ by <b>RixStonGamer</b>
-</p>
+# 🔐 License
+This project is **closed-source** and protected under a **Proprietary License**.  
+You may not copy, modify, redistribute, or reverse-engineer the bot.
+
+Full license → [legal/LICENSE.md](legal/LICENSE.md)
+
+---
+
+# 🛡 Legal & Policies
+ToS → [legal/TERMS.md](legal/TERMS.md)  
+Privacy Policy → [legal/PRIVACY.md](legal/PRIVACY.md)
+
+These documents explain usage rules, data handling, permissions, and responsibilities.
+
+---
+
+# 🆘 Support
+Need help?
+
+Join the official support server:
+
+👉 **https://dsc.gg/rixstongamer**
+
+---
+
+# ❤️ Credits
+Created with ❤️ by **RixStonGamer**  
+Maintained & documented with care.
+
