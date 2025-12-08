@@ -1,177 +1,100 @@
-# RG AutoMod – Discord Link Moderation Bot
+# 🤖 RG AutoMod — Advanced Discord Link Moderation Bot  
+Fast • Secure • Automatic • Zero Configuration
 
-RG AutoMod is a simple and efficient moderation bot designed to automatically block unwanted links in Discord servers.  
-It provides link protection, trusted-user controls, custom whitelists, logging, and optional strike-based punishment.  
-This repository contains full documentation. The bot's source code is private and licensed.
+![Status](https://img.shields.io/badge/Bot-Live-brightgreen)
+![Docs](https://img.shields.io/badge/Documentation-Complete-blue)
+![License](https://img.shields.io/badge/License-Proprietary-red)
+![Support](https://img.shields.io/badge/Support-Server-7289da?logo=discord)
 
----
+RG AutoMod is a high-performance, fully automated link-moderation bot designed to keep Discord communities clean and safe.  
+It blocks unwanted links, prevents spam/scams, provides trusted user controls, customizable rules, and an optional auto-punishment system — all with zero setup.
 
-## Invite the Bot
-Official bot invite URL:
-https://invite-rgautomod.rixstongamer.xyz
-
----
-
-## Overview
-RG AutoMod scans messages in real time and removes any links posted by users who are not trusted, not whitelisted, or not in allowed channels.
-
-Main capabilities:
-- Automatic link detection and removal  
-- Trusted user system (temporary & permanent)  
-- Channel allowlist system  
-- Default safe whitelist  
-- Custom whitelist patterns  
-- Optional auto-punishment  
-- Logging system  
-- Custom warning messages  
-- Persistent storage  
-- Auto welcome/setup message  
-- Dynamic status updates  
+This repository contains **documentation only**.  
+⚠️ The bot’s source code is private and licensed.
 
 ---
 
-## Features
+# 🚀 Invite RG AutoMod
 
-### 1. Automatic Link Blocking
-- Detects http/https links, “www.” links, and raw domain names  
-- Supports all major domain extensions  
-- Removes messages instantly  
-- Sends a temporary warning (auto-deletes after 5s)  
+Use the custom official invite link:
 
----
+👉 **https://invite-rgautomod.rixstongamer.xyz**
 
-### 2. Default Whitelisted Links
-Some important and safe links are allowed by default, such as:
-- rixstongamer.xyz  
-- rixxymc.in  
-- Official YouTube channels  
-- Official Instagram  
-
-These links cannot be removed.
+(Automatically redirects to the Discord OAuth2 bot invite)
 
 ---
 
-### 3. Trusted User System
-**Permanent trust:**  
-/trust-user @user  
+# 🌟 Key Features
 
-**Temporary trust:**  
-/trust-user @user 1h  
-/trust-user @user 30m  
-/trust-user @user 2d  
+### 🔗 Automatic Link Blocking  
+Instant detection & deletion of unwanted links across all channels.
 
-**Management:**  
-/untrust-user @user  
-/list-trusted  
+### 🔒 Default Safe Whitelist  
+Pre-approved safe domains (e.g., rixstongamer.xyz, rixxymc.in, YouTube, Instagram).
 
----
+### 👤 Trusted User System  
+Grant link permissions temporarily or permanently.
 
-### 4. Channel Allowlist
-Allow specific channels to use links:
+### 📺 Channel Allowlist  
+Choose channels where links are allowed (e.g., #media, #promotions).
 
-/allow-channel #channel  
-/block-channel #channel  
-/list-channels  
+### 📋 Custom Whitelist  
+Add or remove approved links/patterns.
 
----
-
-### 5. Custom Whitelist
-Add your own allowed links or patterns:
-
-/add-whitelist pattern  
-/remove-whitelist pattern  
-/list-whitelist  
-/reset-whitelist  
-
-Examples:
-- /add-whitelist discord.gg  
-- /add-whitelist twitter.com  
-
----
-
-### 6. Link Logging
-Enable a log channel to track deleted links:
-
-/set-log-channel #channel  
-/remove-log-channel  
-
-Logs show:
+### 📊 Link Deletion Logging  
+Track:
 - User  
 - Channel  
 - Message  
 - Strike count  
 - Timestamp  
 
----
+### ⚖️ Auto-Punishment System (Optional)  
+Strike-based moderation with configurable timeout.
 
-### 7. Custom Warning Messages
-/set-warning message  
-/reset-warning  
+### 💬 Custom Warning Messages  
+Personalize link-block warnings for your server.
 
----
+### 🔄 Dynamic Status  
+Updates every 30 seconds with total server count.
 
-### 8. Auto-Punishment (Optional)
-/punishment enable  
-/punishment disable  
-/punishment-config [max_strikes] [timeout_minutes]  
-/reset-strikes @user  
+### 👋 Automatic Welcome Message  
+Bot guides admins when joining a server.
 
-Default:
-- 3 strikes  
-- 10-minute timeout  
+### 💾 Persistent Storage  
+All settings auto-save and auto-load.
 
 ---
 
-### 9. Persistent Storage
-The bot automatically saves:
-- Trusted users  
-- Temporary trust timers  
-- Allowed channels  
-- Custom whitelists  
-- Warning settings  
-- Log channel settings  
-- Punishment settings  
-- Strike counts  
+# 📚 Complete Documentation
+
+| Topic | File |
+|-------|------|
+| 🔍 Overview | [docs/overview.md](docs/overview.md) |
+| ✨ All Features | [docs/features.md](docs/features.md) |
+| 📝 Commands Guide | [docs/commands.md](docs/commands.md) |
+| ⚙️ Setup Instructions | [docs/setup.md](docs/setup.md) |
+| 🔐 Permission Requirements | [docs/permissions.md](docs/permissions.md) |
+| 🛠 Changelog | [docs/changelog.md](docs/changelog.md) |
+| 🆘 Support & Contact | [docs/support.md](docs/support.md) |
 
 ---
 
-### 10. Dynamic Status
-Updates automatically, for example:
-“Watching 12 servers | /help”
+# 🔐 Licensing
+
+RG AutoMod is **closed-source** and cannot be copied, redistributed, or modified.  
+Only documentation is publicly visible.
+
+For custom license creation, contact the owner.
 
 ---
 
-### 11. Welcome Message
-When the bot joins a server, it posts:
-- Setup instructions  
-- Safe link list  
-- Basic help info  
+# 🆘 Support
 
----
+Need help?  
+Join the official support server:
 
-## Documentation
+👉 **https://dsc.gg/rixstongamer**
 
-Complete docs are available in the /docs folder:
+Created with ❤️ by **RixStonGamer**
 
-- docs/overview.md  
-- docs/features.md  
-- docs/commands.md  
-- docs/setup.md  
-- docs/permissions.md  
-- docs/changelog.md  
-- docs/support.md  
-
----
-
-## License
-RG AutoMod is a proprietary, closed-source project.  
-Code redistribution or modification is not allowed.  
-Documentation may be viewed publicly.
-
----
-
-## Support
-Support server:  
-https://dsc.gg/rixstongamer
-
-Created by RixStonGamer
