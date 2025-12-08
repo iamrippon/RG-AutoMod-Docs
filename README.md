@@ -1,229 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>RG AutoMod – Discord Moderation Bot</title>
-<style>
-    body {
-        font-family: "Segoe UI", sans-serif;
-        background: #0f0f10;
-        color: #e5e5e5;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-    }
+# RG AutoMod – Discord Link Moderation Bot
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px 20px;
-    }
+RG AutoMod is a simple and efficient moderation bot designed to automatically block unwanted links in Discord servers.  
+It provides link protection, trusted-user controls, custom whitelists, logging, and optional strike-based punishment.  
+This repository contains full documentation. The bot's source code is private and licensed.
 
-    h1, h2, h3 {
-        color: #ffffff;
-        margin-bottom: 10px;
-    }
+---
 
-    h1 {
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 700;
-    }
-
-    .section {
-        background: #1a1a1d;
-        padding: 25px;
-        border-radius: 10px;
-        margin-bottom: 25px;
-        border: 1px solid #2c2c30;
-    }
-
-    .badge {
-        display: inline-block;
-        padding: 6px 14px;
-        border-radius: 20px;
-        font-size: 13px;
-        margin-right: 6px;
-        margin-bottom: 10px;
-        background: #29292e;
-        border: 1px solid #3a3a40;
-    }
-
-    a {
-        color: #4ba3ff;
-        text-decoration: none;
-        font-weight: 500;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .code-box {
-        background: #111113;
-        padding: 12px;
-        border-radius: 6px;
-        border: 1px solid #2c2c30;
-        overflow-x: auto;
-        margin: 10px 0;
-        font-family: monospace;
-        white-space: pre;
-        color: #d1d1d1;
-    }
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>🤖 RG AutoMod – Discord Link Moderation Bot</h1>
-
-<div class="section">
-    <span class="badge">Bot Status: Live</span>
-    <span class="badge">Docs Completed</span>
-    <span class="badge">Closed Source</span>
-    <span class="badge">Secure</span>
-</div>
-
-<div class="section">
-    <h2>📌 Overview</h2>
-    <p>
-        RG AutoMod is a clean, fast, and powerful Discord bot designed to block unwanted links, spam, and scam URLs.
-        It provides an automated link-protection system with trusted users, channel allowlists, custom whitelists, and optional strike-based punishment.
-        Everything is fully slash-command based and requires zero setup.
-    </p>
-</div>
-
-<div class="section">
-    <h2>🚀 Invite the Bot</h2>
-    <p>Use the official invite link:</p>
-
-    <div class="code-box">
+## Invite the Bot
+Official bot invite URL:
 https://invite-rgautomod.rixstongamer.xyz
-    </div>
-</div>
 
-<div class="section">
-    <h2>✨ Main Features</h2>
+---
 
-    <h3>1. Automatic Link Blocking</h3>
-    <ul>
-        <li>Detects all major URL formats</li>
-        <li>Instant message deletion</li>
-        <li>Temporary warning message (auto-deletes)</li>
-    </ul>
+## Overview
+RG AutoMod scans messages in real time and removes any links posted by users who are not trusted, not whitelisted, or not in allowed channels.
 
-    <h3>2. Default Safe Whitelist</h3>
-    <p>Some safe links are always allowed (e.g., official website, YouTube, Instagram).</p>
+Main capabilities:
+- Automatic link detection and removal  
+- Trusted user system (temporary & permanent)  
+- Channel allowlist system  
+- Default safe whitelist  
+- Custom whitelist patterns  
+- Optional auto-punishment  
+- Logging system  
+- Custom warning messages  
+- Persistent storage  
+- Auto welcome/setup message  
+- Dynamic status updates  
 
-    <h3>3. Trusted User System</h3>
-    <ul>
-        <li>Permanent trust</li>
-        <li>Temporary trust (15s, 30m, 1h, 2d, etc.)</li>
-        <li>View and remove trusted users</li>
-    </ul>
+---
 
-    <h3>4. Channel Allowlist</h3>
-    <p>Allow links only in selected channels (/allow-channel).</p>
+## Features
 
-    <h3>5. Custom Whitelist Rules</h3>
-    <p>Add or remove custom domains or link patterns.</p>
+### 1. Automatic Link Blocking
+- Detects http/https links, “www.” links, and raw domain names  
+- Supports all major domain extensions  
+- Removes messages instantly  
+- Sends a temporary warning (auto-deletes after 5s)  
 
-    <h3>6. Logging System</h3>
-    <p>Track link deletion with full details (user, channel, message, timestamp, strikes).</p>
+---
 
-    <h3>7. Auto-Punishment System</h3>
-    <p>Configurable strike-based timeout system (optional).</p>
+### 2. Default Whitelisted Links
+Some important and safe links are allowed by default, such as:
+- rixstongamer.xyz  
+- rixxymc.in  
+- Official YouTube channels  
+- Official Instagram  
 
-    <h3>8. Persistent Storage</h3>
-    <p>All settings are saved and restored even after restarts.</p>
+These links cannot be removed.
 
-    <h3>9. Dynamic Status</h3>
-    <p>Status updates every 30 seconds with server count.</p>
+---
 
-    <h3>10. Automatic Welcome Message</h3>
-    <p>Provides basic setup instructions when joining a new server.</p>
-</div>
-
-<div class="section">
-    <h2>🧩 Commands Overview</h2>
-
-    <h3>User Trust</h3>
-    <div class="code-box">
+### 3. Trusted User System
+**Permanent trust:**  
 /trust-user @user  
-/trust-user @user 1h  
-/untrust-user @user  
-/list-trusted
-    </div>
 
-    <h3>Channel Allowlist</h3>
-    <div class="code-box">
+**Temporary trust:**  
+/trust-user @user 1h  
+/trust-user @user 30m  
+/trust-user @user 2d  
+
+**Management:**  
+/untrust-user @user  
+/list-trusted  
+
+---
+
+### 4. Channel Allowlist
+Allow specific channels to use links:
+
 /allow-channel #channel  
 /block-channel #channel  
-/list-channels
-    </div>
+/list-channels  
 
-    <h3>Whitelist Management</h3>
-    <div class="code-box">
+---
+
+### 5. Custom Whitelist
+Add your own allowed links or patterns:
+
 /add-whitelist pattern  
 /remove-whitelist pattern  
 /list-whitelist  
-/reset-whitelist
-    </div>
+/reset-whitelist  
 
-    <h3>Logging</h3>
-    <div class="code-box">
+Examples:
+- /add-whitelist discord.gg  
+- /add-whitelist twitter.com  
+
+---
+
+### 6. Link Logging
+Enable a log channel to track deleted links:
+
 /set-log-channel #channel  
-/remove-log-channel
-    </div>
+/remove-log-channel  
 
-    <h3>Warnings</h3>
-    <div class="code-box">
+Logs show:
+- User  
+- Channel  
+- Message  
+- Strike count  
+- Timestamp  
+
+---
+
+### 7. Custom Warning Messages
 /set-warning message  
-/reset-warning
-    </div>
+/reset-warning  
 
-    <h3>Punishment</h3>
-    <div class="code-box">
+---
+
+### 8. Auto-Punishment (Optional)
 /punishment enable  
 /punishment disable  
-/punishment-config strikes timeout  
-/reset-strikes @user
-    </div>
-</div>
+/punishment-config [max_strikes] [timeout_minutes]  
+/reset-strikes @user  
 
-<div class="section">
-    <h2>📄 Documentation</h2>
-    <ul>
-        <li><a href="docs/overview.md">Overview</a></li>
-        <li><a href="docs/features.md">Features</a></li>
-        <li><a href="docs/commands.md">Commands</a></li>
-        <li><a href="docs/setup.md">Setup Guide</a></li>
-        <li><a href="docs/permissions.md">Permissions</a></li>
-        <li><a href="docs/changelog.md">Changelog</a></li>
-        <li><a href="docs/support.md">Support</a></li>
-    </ul>
-</div>
+Default:
+- 3 strikes  
+- 10-minute timeout  
 
-<div class="section">
-    <h2>🔐 License</h2>
-    <p>
-        RG AutoMod is a closed-source proprietary bot.
-        Redistribution of code is not allowed. Documentation is public for reference.
-    </p>
-</div>
+---
 
-<div class="section">
-    <h2>🆘 Support</h2>
-    <p>Official support server:</p>
-    <div class="code-box">
+### 9. Persistent Storage
+The bot automatically saves:
+- Trusted users  
+- Temporary trust timers  
+- Allowed channels  
+- Custom whitelists  
+- Warning settings  
+- Log channel settings  
+- Punishment settings  
+- Strike counts  
+
+---
+
+### 10. Dynamic Status
+Updates automatically, for example:
+“Watching 12 servers | /help”
+
+---
+
+### 11. Welcome Message
+When the bot joins a server, it posts:
+- Setup instructions  
+- Safe link list  
+- Basic help info  
+
+---
+
+## Documentation
+
+Complete docs are available in the /docs folder:
+
+- docs/overview.md  
+- docs/features.md  
+- docs/commands.md  
+- docs/setup.md  
+- docs/permissions.md  
+- docs/changelog.md  
+- docs/support.md  
+
+---
+
+## License
+RG AutoMod is a proprietary, closed-source project.  
+Code redistribution or modification is not allowed.  
+Documentation may be viewed publicly.
+
+---
+
+## Support
+Support server:  
 https://dsc.gg/rixstongamer
-    </div>
-</div>
 
-</div>
-
-</body>
-</html>
+Created by RixStonGamer
