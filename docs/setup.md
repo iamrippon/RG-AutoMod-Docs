@@ -1,220 +1,164 @@
 # ⚙️ RG AutoMod — Setup Guide
 
-RG AutoMod is designed to work instantly with zero configuration.  
-However, server administrators can customize the bot using the commands listed below.
+This guide will help you set up **RG AutoMod** in your Discord server in just a few steps.
 
 ---
 
-# 1. 🚀 Invite the Bot
+## 🚀 Step 1 — Invite the Bot
 
-Use the official invite link:
+Invite RG AutoMod to your server using the official link.
 
-https://discord.com/oauth2/authorize?client_id=1447209989683806400&permissions=388160&scope=bot%20applications.commands
+Once invited:
 
-The bot will automatically:
-- Load default whitelist
-- Begin blocking unwanted links
-- Send a welcome message with setup info
+* The bot will join your server
+* A welcome message will be sent with basic instructions
 
 ---
 
-# 2. 📊 Enable Logging (Optional but Recommended)
+## 🛠 Step 2 — Required Permissions
 
-Logging helps moderators see which links were blocked.
+Make sure the bot has the following permissions:
 
+* Manage Messages
+* Moderate Members (for timeouts)
+* View Channels
+* Send Messages
+* Embed Links
+* Read Message History
+
+👉 Without these, the bot may not function properly.
+
+---
+
+## 📋 Step 3 — Basic Setup
+
+### 1️⃣ Set Log Channel
+
+```bash
 /set-log-channel #logs
+```
 
-bash
-Copy code
-
-To disable:
-/remove-log-channel
-
-yaml
-Copy code
+This is required to track moderation actions.
 
 ---
 
-# 3. 👤 Add Trusted Users
+### 2️⃣ Allow Channels (Optional)
 
-Allow users to post links anywhere in the server.
+Allow links in specific channels:
 
-### Permanent trust:
-/trust-user @user
-
-shell
-Copy code
-
-### Temporary trust:
-/trust-user @user 1h
-
-yaml
-Copy code
-
-Remove trust:
-/untrust-user @user
-
-bash
-Copy code
-
-View trusted users:
-/list-trusted
-
-yaml
-Copy code
+```bash
+/allow-channel #media
+```
 
 ---
 
-# 4. 📺 Configure Allowed Channels
+### 3️⃣ Add Trusted Users / Roles
 
-Allow all links in specific channels only.
+Allow trusted users to bypass protection:
 
-Allow a channel:
-/allow-channel #channel
-
-css
-Copy code
-
-Block a channel:
-/block-channel #channel
-
-yaml
-Copy code
-
-List allowed channels:
-/list-channels
-
-yaml
-Copy code
+```bash
+/trust add user:@user
+/trust add role:@role
+```
 
 ---
 
-# 5. 🔗 Add Custom Whitelisted Links
+### 4️⃣ Add Custom Whitelist
 
-Add your own allowed links/domains.
+Allow safe links:
 
-/add-whitelist discord.gg
-/add-whitelist twitter.com
-/add-whitelist example.com/promo
-
-makefile
-Copy code
-
-Remove:
-/remove-whitelist pattern
-
-makefile
-Copy code
-
-List:
-/list-whitelist
-
-css
-Copy code
-
-Reset to defaults:
-/reset-whitelist
-
-yaml
-Copy code
+```bash
+/whitelist add domain:example.com
+```
 
 ---
 
-# 6. ⚖️ Enable Auto-Punishment (Optional)
+## ⚖️ Step 4 — Configure Moderation
 
-Automatically punish users who repeatedly post blocked links.
+Set punishment system:
 
-Enable:
-/punishment enable
+```bash
+/config punishment
+```
 
-makefile
-Copy code
+You can configure:
 
-Disable:
-/punishment disable
-
-makefile
-Copy code
-
-Configure:
-/punishment-config 3 10
-
-sql
-Copy code
-(3 strikes → 10-minute timeout)
-
-Reset user strikes:
-/reset-strikes @user
-
-yaml
-Copy code
+* Strike limits
+* Timeouts
+* Reset behavior
 
 ---
 
-# 7. 💬 Customize Warning Messages
+## 🔄 Step 5 — Verify Setup
 
-Default warning works fine, but you can customize it.
+Use:
 
-Set custom message:
-/set-warning Your message here!
-
-vbnet
-Copy code
-
-Reset to default:
-/reset-warning
-
-yaml
-Copy code
-
----
-
-# 8. 📈 View Server & Bot Statistics
-
-Use `/status` to view:
-
-- Total servers  
-- Total users  
-- Bot ping  
-- Trusted users  
-- Allowed channels  
-- Whitelist patterns  
-- Logging enabled/disabled  
-- Punishment configuration  
-
-Example:
+```bash
 /status
+```
 
-yaml
-Copy code
+Check:
 
----
-
-# 9. 🛠 Bot Behavior Overview
-
-RG AutoMod will allow links if:
-- User is trusted  
-- Channel is allowed  
-- Link matches whitelist  
-- User is an admin  
-
-Otherwise → the link is deleted.
+* Log channel ✔
+* Protection enabled ✔
+* Whitelist ✔
+* Trusted system ✔
 
 ---
 
-# ✔ Your Bot is Ready!
+## ⚡ Quick Setup (Recommended)
 
-Most servers only need:
-- `/set-log-channel #logs`  
-- `/allow-channel #links`  
-- `/trust-user @mods`  
+If available, use:
 
-The rest is optional.
+```bash
+/setup quick
+```
+
+👉 Automatically configures:
+
+* Log channel
+* Basic protection
+* Default settings
 
 ---
 
-For full feature descriptions →  
-➡️ [Features Documentation](features.md)
+## ❗ Common Mistakes
 
-For command list →  
-➡️ [Commands Guide](commands.md)
+### Bot not deleting links
+
+* Check permissions
+* Ensure bot role is above users
+
+---
+
+### Logs not showing
+
+* Re-set log channel
+* Check channel permissions
+
+---
+
+### Commands not working
+
+* Use slash commands `/`
+* Ensure bot is online
+
+---
+
+## 🧠 Tips
+
+* Keep bot role **above regular members**
+* Use whitelist for safe domains
+* Avoid over-restricting channels
+
+---
+
+## 🆘 Need Help?
+
+Join support:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+Powered by **RG Studios**
