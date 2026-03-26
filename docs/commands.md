@@ -1,174 +1,186 @@
-# 📝 RG AutoMod — Commands Documentation
+# 📝 RG AutoMod — Commands
 
-This page lists all available slash commands for RG AutoMod, organized by category for server administrators and moderators.
-
----
-
-# 1. 👤 User Trust Commands
-
-### Grant link posting permission:
-/trust-user @user
-
-shell
-Copy code
-
-### Grant temporary link permission:
-/trust-user @user [duration]
-
-sql
-Copy code
-Examples:
-- /trust-user @John 30m
-- /trust-user @Winner 1h
-- /trust-user @Guest 2d
-
-### Remove trust:
-/untrust-user @user
-
-shell
-Copy code
-
-### View all trusted users:
-/list-trusted
-
-yaml
-Copy code
-Shows:
-- Permanent trusted users  
-- Temporary trusted users (with expiry timers)
+RG AutoMod uses **modern slash commands (/)** and supports **mention-based commands**.
 
 ---
 
-# 2. 📺 Channel Allowlist Commands
+## ⚙️ General Commands
 
-### Allow links in a channel:
-/allow-channel #channel
+### `/help`
 
-shell
-Copy code
-
-### Block links in a channel:
-/block-channel #channel
-
-shell
-Copy code
-
-### List all allowed channels:
-/list-channels
-
-yaml
-Copy code
+Shows all available commands and usage.
 
 ---
 
-# 3. 🔗 Whitelist Management Commands
+### `/status`
 
-### Add a custom allowed link/domain:
-/add-whitelist pattern
-
-shell
-Copy code
-
-### Remove a custom allowed pattern:
-/remove-whitelist pattern
-
-shell
-Copy code
-
-### View all whitelist patterns:
-/list-whitelist
-
-shell
-Copy code
-
-### Reset to default whitelist only:
-/reset-whitelist
-
-yaml
-Copy code
+Displays current server configuration and protection status.
 
 ---
 
-# 4. 📊 Logging Commands
+## 📋 Whitelist Commands
 
-### Enable link deletion logging:
-/set-log-channel #channel
+### `/whitelist add`
 
-shell
-Copy code
+Add a domain or pattern to the whitelist.
 
-### Disable logging:
-/remove-log-channel
+**Example:**
 
-yaml
-Copy code
+```
+/whitelist add domain:example.com
+```
 
 ---
 
-# 5. 💬 Warning Message Commands
+### `/whitelist remove`
 
-### Set a custom warning message:
-/set-warning message
-
-shell
-Copy code
-
-### Reset warning message to default:
-/reset-warning
-
-yaml
-Copy code
+Remove a domain or pattern from the whitelist.
 
 ---
 
-# 6. ⚖️ Auto-Punishment Commands (Optional Feature)
+### `/whitelist list`
 
-### Enable or disable the punishment system:
-/punishment enable
-/punishment disable
-
-shell
-Copy code
-
-### Configure strike limit and timeout duration:
-/punishment-config [max_strikes] [timeout_minutes]
-
-shell
-Copy code
-
-### Reset a user's strike count:
-/reset-strikes @user
-
-yaml
-Copy code
+View all whitelisted domains.
 
 ---
 
-# 7. 📈 Status & Information Commands
+## 👤 Trusted System Commands
 
-### View bot statistics and server configuration:
-/status
+### `/trust add`
 
-shell
-Copy code
+Add a trusted user or role.
 
-### Show help info and command guide:
-/help
+**Examples:**
 
-yaml
-Copy code
-
----
-
-# ✔ Command Syntax Notes
-- All commands require **Administrator** permissions to modify settings  
-- Duration formats: `15s`, `30m`, `1h`, `2d`  
-- Pattern matching for whitelists is case-insensitive  
+```
+/trust add user:@user
+/trust add role:@role
+```
 
 ---
 
-For full detailed descriptions of features →  
-➡️ [Full Feature Documentation](features.md)
+### `/trust remove`
 
-For setup instructions →  
-➡️ [Setup Guide](setup.md)
+Remove trusted user or role.
+
+---
+
+### `/trust list`
+
+View all trusted users and roles.
+
+---
+
+## 📺 Channel Control Commands
+
+### `/channel allow`
+
+Allow links in a specific channel.
+
+```
+/channel allow #media
+```
+
+---
+
+### `/channel block`
+
+Remove a channel from the allowlist.
+
+---
+
+### `/channel list`
+
+View allowed channels.
+
+---
+
+## ⚖️ Moderation Commands
+
+### `/strikes view`
+
+View a user's strike count.
+
+---
+
+### `/strikes reset`
+
+Reset a user’s strikes.
+
+---
+
+### `/config punishment`
+
+Configure strike limits and punishment system.
+
+---
+
+### `/config cooldown`
+
+Adjust moderation cooldown settings.
+
+---
+
+### `/config logging`
+
+Set or update log channel.
+
+---
+
+## 🔐 License Commands
+
+### `/license generate`
+
+Generate a license key.
+
+**Example:**
+
+```
+/license generate tier:pro duration:3m
+```
+
+---
+
+### `/license redeem`
+
+Activate a license key for a server.
+
+---
+
+### `/license status`
+
+Check current license status.
+
+---
+
+## 📊 Utility Commands
+
+### `/stats`
+
+View server moderation statistics.
+
+---
+
+### `/support`
+
+Get support links and resources.
+
+---
+
+## ⚡ Notes
+
+* All commands use `/` (slash commands)
+* Mention commands (`@Bot`) are also supported
+* Prefix commands like `!` or `.` are **not supported**
+
+---
+
+## 🆘 Need Help?
+
+Join our support server:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+Powered by **RG Studios**
