@@ -1,116 +1,134 @@
-# 🔐 RG AutoMod — Permission Requirements
+# 🔐 RG AutoMod — Permissions Guide
 
-RG AutoMod is designed to run safely with minimal permissions.  
-This page explains each required permission and why it is needed.
-
----
-
-# 1. ✔ Required Permissions (Must Be Enabled)
-
-### **Manage Messages**
-- Allows the bot to delete messages containing blocked links  
-- Required for the entire moderation system to function  
-
-### **Send Messages**
-- Allows the bot to send warnings, logs, and status updates
-
-### **Embed Links**
-- Required for sending rich embeds in logs, welcome messages, and help messages
-
-### **Read Message History**
-- Allows the bot to properly reference and delete messages  
-- Required for accurate link detection
-
-### **View Channels**
-- Needed so the bot can see channels and apply rules
-
-### **Use Application Commands**
-- Allows slash commands (`/help`, `/trust-user`, `/allow-channel`, etc.)
+This document explains all permissions required by **RG AutoMod** and why they are needed.
 
 ---
 
-# 2. ✔ Optional (Recommended) Permissions
+## ⚙️ Required Permissions
 
-### **Attach Files**
-- Used for detailed logging or future features
+RG AutoMod needs the following permissions to function correctly:
 
-### **Use External Emojis**
-- Allows better-looking embeds and warning messages  
+### 📝 Manage Messages
 
----
-
-# 3. ❌ Permissions NOT Required (Do NOT Give)
-
-RG AutoMod does **NOT** need any of the following:
-
-- Administrator  
-- Manage Server  
-- Manage Roles  
-- Manage Channels  
-- Ban Members  
-- Kick Members  
-- Moderate Members  
-- Mention Everyone  
-- Manage Webhooks  
-- View Audit Log  
-
-Giving unnecessary permissions may cause:
-- Security issues  
-- User concern  
-- Top.gg review delays  
+* Delete harmful links and spam
+* Enforce link moderation
 
 ---
 
-# 4. ⚠️ Timeout Permission (If Punishment System Is Enabled)
+### ⏱️ Moderate Members
 
-If you want to use the optional auto-punishment system:
-
-### Required:
-**Moderate Members** (Timeout Members)
-
-Used ONLY to issue timeouts after repeated link violations.
-
-If punishment system is disabled → this permission is not needed.
+* Apply timeouts for rule violations
+* Enforce punishment system
 
 ---
 
-# 5. ✔ Final Permissions Summary
+### 👀 View Channels
 
-| Permission | Required | Reason |
-|-----------|----------|--------|
-| Manage Messages | ✔ | Delete blocked links |
-| Send Messages | ✔ | Warnings + messages |
-| Embed Links | ✔ | Status, logs, help embeds |
-| Read Message History | ✔ | Detect and delete messages |
-| View Channels | ✔ | See channels and enforce rules |
-| Use Application Commands | ✔ | Slash commands |
-| Attach Files | Optional | Better logging |
-| Use External Emojis | Optional | Aesthetic embeds |
-| Moderate Members | Optional | Timeout system |
+* Read messages across the server
+* Monitor activity
 
 ---
 
-# 6. 💡 Recommended Invite Permissions
+### 💬 Send Messages
 
-Use this safe pre-calculated permission integer:
-
-388160
-
-yaml
-Copy code
-
-This ensures:
-- No dangerous permissions  
-- Top.gg friendly  
-- Maximum security  
-
-Official invite link:
-https://discord.com/oauth2/authorize?client_id=1447209989683806400&permissions=388160&scope=bot%20applications.commands
+* Send warnings and system messages
+* Respond to commands
 
 ---
 
-For setup →  
-➡️ [Setup Guide](setup.md)
+### 🔗 Embed Links
 
-For full features →  
-➡️ [Feature Documentation](features.md)
+* Send rich embeds (logs, status, alerts)
+
+---
+
+### 📜 Read Message History
+
+* Analyze recent messages for moderation
+* Ensure accurate detection
+
+---
+
+## ⚠️ Recommended Permissions
+
+These are not strictly required but improve functionality:
+
+### 🛠️ Manage Roles
+
+* Assign or manage roles (future features)
+* Required for advanced moderation systems
+
+---
+
+### 📢 Manage Channels (Optional)
+
+* Used for advanced features like raid protection (if enabled)
+
+---
+
+## 🚫 Permissions Not Used
+
+RG AutoMod does **NOT** require or use:
+
+* Administrator
+* Manage Server
+* Kick Members (unless future features require it)
+
+👉 The bot is designed to use **only necessary permissions** for security and trust.
+
+---
+
+## ⚠️ Role Position (IMPORTANT)
+
+For RG AutoMod to work correctly:
+
+* The bot’s role must be **above regular members**
+* The bot’s role must be **above users it needs to moderate**
+
+Otherwise:
+
+* It may fail to delete messages
+* It may fail to apply punishments
+
+---
+
+## 🧠 Best Practices
+
+* Do NOT give Administrator permission
+* Only grant required permissions
+* Regularly review bot permissions
+
+---
+
+## 🆘 Troubleshooting
+
+### Bot not deleting links
+
+* Check "Manage Messages" permission
+* Ensure role hierarchy is correct
+
+---
+
+### Punishments not working
+
+* Check "Moderate Members" permission
+* Ensure bot role is high enough
+
+---
+
+### Logs not appearing
+
+* Check channel permissions
+* Ensure bot can send messages
+
+---
+
+## 🆘 Need Help?
+
+Join support:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+Powered by **RG Studios**
