@@ -1,6 +1,6 @@
 <h1 align="center">🤖 RG AutoMod</h1>
 <p align="center">
-  <b>Next-Generation Discord Security • Fast • Intelligent • Automated</b><br>
+  <b>Advanced Discord Security • Fast • Reliable • Automated</b><br>
   Protect your server from scams, malicious links, and spam — in real-time.
 </p>
 
@@ -21,7 +21,6 @@ Last Updated: 2026 • Version: v3.0
 
 * [✨ Overview](#-overview)
 * [🌟 Key Features](#-key-features)
-* [🧠 Advanced Systems](#-advanced-systems)
 * [📚 Documentation](#-documentation)
 * [⚙️ Technical Info](#️-technical-info)
 * [🔐 License](#-license)
@@ -38,11 +37,11 @@ Last Updated: 2026 • Version: v3.0
 * Malicious links
 * Scam URLs
 * Spam & self-promotion
-* Suspicious activity
+* Unwanted or suspicious content
 
-Designed for **modern communities**, it delivers fast, reliable, and scalable moderation with minimal setup.
+Designed for **modern communities**, it provides fast, reliable, and scalable moderation with minimal setup.
 
-Unlike traditional bots, RG AutoMod uses a **database-driven architecture (SQLite)** for improved performance, stability, and long-term scalability.
+Built on a **database-driven system (SQLite)**, RG AutoMod ensures better performance, stability, and data reliability compared to traditional JSON-based bots.
 
 ---
 
@@ -67,7 +66,7 @@ Unlike traditional bots, RG AutoMod uses a **database-driven architecture (SQLit
 ### 📺 Channel Control
 
 * Allow links only in selected channels
-* Automatic enforcement elsewhere
+* Automatic enforcement across the server
 
 ---
 
@@ -107,36 +106,6 @@ Unlike traditional bots, RG AutoMod uses a **database-driven architecture (SQLit
   * total members
   * total servers
   * system status
-
----
-
-# 🧠 Advanced Systems (v3)
-
-### 🌍 Global Scam Detection
-
-* Detects repeated scam patterns across servers
-* Improves accuracy over time
-
----
-
-### 🚨 Raid Protection
-
-* Detects join/message spikes
-* Helps prevent server raids
-
----
-
-### 🧠 Reputation System
-
-* Tracks user behavior
-* Adjusts moderation dynamically
-
----
-
-### ⚙️ Database-Driven System
-
-* SQLite-based storage (replaces JSON)
-* Faster, safer, and scalable
 
 ---
 
