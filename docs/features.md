@@ -1,344 +1,134 @@
-# ✨ RG AutoMod — Full Feature Documentation
+# 🌟 RG AutoMod — Features
 
-RG AutoMod is a complete, high-performance link moderation system designed to protect Discord communities from unwanted links, spam, scams, and unauthorized promotions.  
-This document provides a full technical breakdown of every feature included in the bot.
-
----
-
-# 1. 🔗 Automatic Link Detection & Removal
-
-RG AutoMod instantly detects and removes unwanted links in real time.
-
-### ✔ Detects:
-- http:// and https:// links  
-- www. links  
-- Raw domains (example.com)  
-- All major TLDs (.com, .net, .org, .gg, .xyz, .io, etc.)
-
-### ✔ How it works:
-1. A user sends a message containing a link  
-2. Bot deletes it instantly  
-3. A temporary warning is shown (auto-deletes after 5s)  
-4. (Optional) Logged in the log channel  
-
-### ✔ Warning message features:
-- Auto-deletes  
-- Customizable by admins  
+RG AutoMod provides a powerful set of tools designed to protect your Discord server from scams, spam, and malicious links — all in real-time.
 
 ---
 
-# 2. 🔒 Default Whitelist System
+## 🔗 Smart Link Protection
 
-These are safe, pre-approved links that are **always allowed**:
+Automatically detects and removes harmful or unwanted links.
 
-### ✔ Important Default Links (short list)
-- rixstongamer.xyz  
-- rixxymc.in  
-- youtube.com/@RixStonGamer  
-- instagram.com/rixstongamer  
-
-### Key features:
-- Case-insensitive  
-- Supports http / https / no prefix  
-- Cannot be removed (protected)  
+* Blocks scam websites and phishing links
+* Detects Discord invites and self-promotion
+* Filters suspicious and unsafe domains
+* Fast and optimized real-time scanning
 
 ---
 
-# 3. 👤 User Trust System
+## 👤 Trusted System
 
-Trusted users can bypass link blocking.
+Allow specific users or roles to bypass protection.
 
-## 🔹 Permanent Trust
-/trust-user @user
-
-- User may post links in all channels  
-- Does not expire  
-- Saved through bot restarts  
-
-## 🔹 Temporary Trust
-
-
-/trust-user @user 1h
-
-
-Supported formats:
-- 15s  
-- 30m  
-- 1h  
-- 2d  
-
-Auto-expires once the timer ends.
-
-## 🔹 Manage Trust
-
-
-/untrust-user @user
-/list-trusted
-
+* Add trusted users and roles
+* Temporary and permanent trust support
+* Ideal for moderators, creators, and verified members
 
 ---
 
-# 4. 📺 Channel Allowlist
+## 📺 Channel Control
 
-Admins can choose which channels allow links.
+Control where links are allowed in your server.
 
-### Commands:
-
-
-/allow-channel #channel
-/block-channel #channel
-/list-channels
-
-
-### Examples:
-- Allow links in #media  
-- Allow promotions in #ads  
-- Block links everywhere else  
+* Allow links only in selected channels
+* Automatically enforce restrictions elsewhere
+* Perfect for channels like #media or #promotions
 
 ---
 
-# 5. ✅ Custom Whitelist System
+## 📋 Custom Whitelist
 
-Admins can add or remove allowed links for their server.
+Approve safe links and domains.
 
-### Commands:
+* Add custom domains or URL patterns
+* Supports partial and flexible matching
+* Case-insensitive detection
 
+Examples:
 
-/add-whitelist pattern
-/remove-whitelist pattern
-/list-whitelist
-/reset-whitelist
-
-
-### Examples:
-/add-whitelist discord.gg  
-/add-whitelist twitter.com  
-/add-whitelist example.com/promo  
-
-Supports:
-- Partial match  
-- Case-insensitive  
-- Specific URLs or full domains  
+* `discord.gg`
+* `twitter.com`
+* `example.com`
 
 ---
 
-# 6. 📊 Link Deletion Logging
+## 📊 Logging System
 
-Log every deleted link to a chosen channel.
+Track moderation activity with detailed logs.
 
-### Commands:
-
-
-/set-log-channel #channel
-/remove-log-channel
-
-
-### Log entry includes:
-- User  
-- Channel  
-- Message content  
-- Timestamp  
-- Strike count (if punishment is enabled)  
-
-Example:
-
-
-🔗 Link Deleted
-User: @John
-Channel: #general
-Message: "Check this out: example.com"
-Strike: 1/3
-Time: 2:30 PM
-
+* Logs deleted messages
+* Shows user, channel, and timestamp
+* Displays strike count and actions taken
 
 ---
 
-# 7. 💬 Custom Warning Messages
+## ⚖️ Strike-Based Moderation
 
-Customize the warning message shown when a link is blocked.
+Automated punishment system based on violations.
 
-### Commands:
-
-
-/set-warning message
-/reset-warning
-
-
-Example:
-
-
-/set-warning Links are restricted! Please check #rules.
-
+* Configurable strike limits
+* Automatic timeouts
+* Manual and automatic reset options
 
 ---
 
-# 8. ⚖️ Auto-Punishment System (Optional)
+## 💬 Custom Warning Messages
 
-Progressive punishment for repeated violations.
+Customize how the bot warns users.
 
-### Enable / Disable:
-
-
-/punishment enable
-/punishment disable
-
-
-### Configure:
-
-
-/punishment-config [max_strikes] [timeout_minutes]
-
-
-### Default:
-- 3 strikes  
-- 10-minute timeout  
-
-### Behavior:
-- Strike 1 → warning  
-- Strike 2 → warning  
-- Strike 3 → timeout  
-- Strikes reset after timeout  
-
-### Manual reset:
-
-
-/reset-strikes @user
-
+* Fully editable warning messages
+* Match your server’s tone and style
 
 ---
 
-# 9. 💾 Persistent Storage
+## 🔄 Dynamic Status
 
-Everything is saved into a JSON storage file:
+Live bot status updates showing:
 
-- Trusted users  
-- Temporary trust timers  
-- Allowed channels  
-- Custom whitelist  
-- Logging settings  
-- Punishment settings  
-- Strike counts  
-- Custom warning message  
-
-Reloads automatically on startup.
+* Total members
+* Total servers
+* System activity
 
 ---
 
-# 10. 🔄 Dynamic Bot Status
+## ⚙️ Configuration System
 
-Updates every 30 seconds with:
-- Total servers  
-- /help command hint  
+Easily manage your server settings.
 
-Example:
-
-
-Watching 12 servers | /help
-
+* Configure logging, whitelist, and moderation
+* Adjust cooldowns and protection rules
+* Centralized control using slash commands
 
 ---
 
-# 11. 👋 Welcome Message
+## 💾 Persistent Data System
 
-When added to a server, the bot automatically sends:
+All settings are saved automatically.
 
-- Quick setup instructions  
-- Default safe links  
-- /help usage info  
-- Support link  
+* Trusted users and roles
+* Whitelist and allowed channels
+* Moderation configuration
+* Strike tracking
 
----
-
-# 12. 📈 Full Statistics Dashboard (/status)
-
-Shows:
-
-### 🌐 Global:
-- Total servers  
-- Total users  
-- Bot latency  
-
-### 📊 Server:
-- Trusted users  
-- Temporary trusted users  
-- Allowed channels  
-- Whitelisted patterns  
-- Logging status  
-
-### ⚙️ Configuration:
-- Punishment enabled/disabled  
-- Max strikes  
-- Timeout duration  
-- Custom warning  
+Data is securely stored using a **SQLite database system** for improved reliability and performance.
 
 ---
 
-# 13. 🎯 Permission System
+## 🚀 Built for Performance
 
-### Who is allowed to post links?
+RG AutoMod is designed to be:
 
-| User Type        | Allowed |
-|-----------------|---------|
-| Admins          | ✔ Always |
-| Trusted Users   | ✔ |
-| Allowed Channels| ✔ |
-| Whitelisted Links | ✔ |
-| Normal Users    | ❌ |
-
-### Priority Order:
-Admin > Allowed Channel > Trusted User > Whitelisted Link > Block  
+* Fast and efficient
+* Reliable under load
+* Scalable for growing communities
 
 ---
 
-# 14. 🎨 Bot Behavior
+## 🆘 Need Help?
 
-### Bot ignores:
-- Admins  
-- Other bots  
-- Itself  
-- Whitelisted links  
-- Trusted users  
-- Allowed channels  
+Join our support server:
 
-### Bot blocks:
-- All other link attempts  
-- Unapproved invite links  
-- Links in restricted channels  
+👉 https://discord.gg/GFGCn2mMrE
 
 ---
 
-# 15. 📊 Technical Details
-
-- Python 3.12  
-- discord.py 2.3.2  
-- JSON storage  
-- Link detection: <100ms  
-- Status refresh: 30 seconds  
-- Temporary trust check: every minute  
-
----
-
-# 16. 💡 Best Practices
-
-- Enable logging for mod visibility  
-- Add trusted moderators  
-- Use temporary trust for events  
-- Create a #media or #links channel  
-- Use punishment system only when needed  
-
----
-
-# 17. ⚡ Performance
-
-- Lightweight and optimized  
-- Stable across multiple servers  
-- Efficient pattern matching  
-- Persistent data system  
-
----
-
-For commands →  
-➡️ [Commands Documentation](commands.md)
-
-For setup →  
-➡️ [Setup Guide](setup.md)
+Powered by **RG Studios**
