@@ -1,93 +1,109 @@
-# 🆘 RG AutoMod — Support & Contact
+# 🆘 RG AutoMod — Support
 
-Need help configuring the bot? Found a bug? Want to request new features?  
-This page provides all support and contact options.
-
----
-
-# 1. 💬 Official Support Server
-
-Join the community support server for:
-- Help & troubleshooting  
-- Bug reporting  
-- Feature requests  
-- Announcements & updates  
-- Direct conversation with the developer  
-
-### 🔗 Support Server Link:
-https://dsc.gg/rixstongamer
+Need help with **RG AutoMod**? You're in the right place.
 
 ---
 
-# 2. 👨‍💻 Developer & Ownership
+## 💬 Support Server
 
-RG AutoMod is developed and maintained by:
+Join our official Discord server for:
 
-**Creator:** RixStonGamer  
-**Website:** https://rixstongamer.xyz  
-**Community:** https://rixxymc.in  
+* Setup help
+* Bug reports
+* Feature requests
+* General questions
 
-For business inquiries or collaboration:
-- Contact through the support server
-
----
-
-# 3. 📌 About the Project
-
-RG AutoMod is a **closed-source** Discord bot designed to provide:
-
-- Fast & efficient link blocking  
-- Server-side safety  
-- Customizable automod features  
-- Trusted user systems  
-- Logging & moderation tools  
-
-This GitHub repository contains **documentation only**.  
-The bot’s source code is private and not available for distribution or modification.
+👉 https://discord.gg/GFGCn2mMrE
 
 ---
 
-# 4. 📄 Terms & Usage
+## ⚙️ Before Asking for Help
 
-By using RG AutoMod, you agree to:
-- Follow Discord’s Terms of Service  
-- Not attempt to reverse engineer the bot  
-- Not impersonate or clone the bot  
-- Use the bot for lawful, non-abusive purposes  
+Please check the following first:
 
----
+* 📚 Documentation:
+  https://github.com/iamrippon/RG-AutoMod-Docs
 
-# 5. 🛠 Reporting Bugs or Issues
+* Use `/status` to verify your configuration
 
-To report a bug:
-1. Join the support server  
-2. Open a ticket in the designated channel  
-3. Provide details:
-   - What command or feature failed  
-   - Steps to reproduce  
-   - Screenshots (if possible)
+* Make sure:
 
-The developer will respond as soon as possible.
+  * Log channel is set
+  * Permissions are correct
+  * Bot has required roles
 
 ---
 
-# 6. 💡 Feature Requests
+## 🐛 Reporting Bugs
 
-Have an idea?
-- Submit suggestions in the **#suggestions** channel in the support server  
-- Popular suggestions may be added to future updates  
+When reporting an issue, please include:
 
-Your feedback helps improve the bot!
+* Server ID (if possible)
+* Command used
+* Error message or logs
+* What you expected vs what happened
+
+👉 This helps us fix issues faster.
 
 ---
 
-# ✔ End of Documentation
+## 💡 Feature Requests
 
-For setup →  
-➡️ [Setup Guide](setup.md)
+Have an idea to improve RG AutoMod?
 
-For full feature list →  
-➡️ [Feature Documentation](features.md)
+You can:
 
-For commands →  
-➡️ [Commands Guide](commands.md)
+* Suggest features in the support server
+* Provide detailed explanations for better consideration
+
+---
+
+## ⚠️ Common Issues
+
+### ❌ Bot not working
+
+* Check if bot is online
+* Verify permissions
+* Restart configuration
+
+---
+
+### ❌ Logs not showing
+
+* Set log channel again
+* Ensure bot has access to the channel
+
+---
+
+### ❌ Commands not responding
+
+* Use slash commands `/`
+* Ensure bot has proper permissions
+
+---
+
+## 🚀 Updates & Announcements
+
+All updates, changelogs, and important announcements are shared in the support server.
+
+---
+
+## ❤️ Support RG AutoMod
+
+If you like the bot, consider:
+
+* Sharing it with others
+* Joining the community
+* Supporting future development
+
+---
+
+## 📬 Contact
+
+For additional help:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+Powered by **RG Studios**
