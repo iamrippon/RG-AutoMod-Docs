@@ -1,98 +1,117 @@
-# RG AutoMod — Privacy Policy
+# 🔐 RG AutoMod — Privacy Policy
 
-Last Updated: December 2025
-
-Your privacy is important. This policy explains what data RG AutoMod collects, how it is used, and your rights regarding the bot.
+Last Updated: 2026
 
 ---
 
-## 1. Information We Collect
-RG AutoMod collects only the data required for its moderation features, including:
+## 1. Introduction
 
-### Server Configuration Data:
-- Whitelisted link patterns  
-- Allowed channels  
-- Trusted user IDs (temporary & permanent)  
-- Custom warning messages  
-- Logging channel settings  
-- Punishment rules  
-- Strike counts  
+This Privacy Policy explains how **RG AutoMod** ("the bot"), developed by **RG Studios**, collects, uses, and protects data when you use the bot.
 
-### Temporary Data:
-- Deleted messages processed for link detection  
-(These are **not stored permanently**.)
-
-RG AutoMod does **not** collect:
-- Personal information  
-- IP addresses  
-- Direct messages  
-- Emails  
-- Sensitive identifiers  
+By using RG AutoMod, you agree to this Privacy Policy.
 
 ---
 
-## 2. How Data Is Used
+## 2. Data We Collect
+
+RG AutoMod only collects data necessary for functionality and moderation features.
+
+### 📌 Server Data
+
+* Guild (server) ID
+* Configuration settings (whitelist, logging, cooldowns, etc.)
+
+### 👤 User Data
+
+* User IDs
+* Moderation data (e.g., strike counts, violations)
+
+### ⚙️ System Data
+
+* Channel IDs
+* Role IDs
+* Timestamps related to moderation events
+
+---
+
+## 3. How We Use Data
+
 The collected data is used strictly to:
-- Determine whether a user can send links  
-- Moderate messages based on server configuration  
-- Execute admin commands  
-- Provide optional logging inside your server  
 
-No data is sold, shared, or used for analytics.
+* Provide moderation features
+* Enforce server-specific configurations
+* Track violations and apply moderation actions
+* Improve bot performance and reliability
 
----
-
-## 3. How Data Is Stored
-All data is stored securely inside the bot’s private storage (JSON-based).  
-Data is:
-- Never shared with third parties  
-- Never transferred outside the bot environment  
-- Automatically loaded when the bot restarts  
-
-Admins may reset data by removing configurations using the bot's commands.
+We do **not** use your data for advertising or profiling.
 
 ---
 
-## 4. Message Content
-RG AutoMod **does not store message content permanently**.
+## 4. Data Storage
 
-Message content is only scanned temporarily for:
-- Link detection  
-- Spam or scam detection  
-- Logging (if enabled by server admins)
-
-Logs are stored **only inside your Discord server**, not by the bot.
+* Data is stored securely using a **SQLite database system**
+* Data is only accessible by the bot system
+* We take reasonable steps to protect stored data
 
 ---
 
-## 5. Data Removal
-You may request data removal by:
-- Removing the bot from your server  
-- Resetting configurations via Slash Commands  
-- Contacting the bot owner  
+## 5. Data Sharing
 
-When the bot leaves a server, all stored data for that server is automatically deleted.
+We do **not** sell, trade, or share your data with third parties.
+
+Data may only be disclosed if required by law or to comply with legal obligations.
 
 ---
 
-## 6. Your Rights
-As a Discord server admin or user, you may:
-- View data stored by the bot  
-- Request deletion of any stored server settings  
-- Configure what the bot logs or does not log  
+## 6. Data Retention
+
+* Data is stored as long as the bot is active in your server
+* If the bot is removed, some data may be deleted automatically or retained temporarily for system integrity
 
 ---
 
-## 7. Compliance
-RG AutoMod follows:
-- Discord Developer Terms  
-- Discord Privacy & Data Handling Guidelines  
+## 7. User Rights
 
-No external tracking or analytics are used.
+Server owners and users may:
+
+* Remove the bot to stop data collection
+* Request data removal via support
 
 ---
 
-## 8. Contact
-For privacy concerns, data requests, or general support:
+## 8. Third-Party Services
 
-**https://dsc.gg/rixstongamer**
+RG AutoMod operates using the Discord platform and is subject to:
+
+* Discord Terms of Service
+* Discord Privacy Policy
+
+---
+
+## 9. Changes to Policy
+
+This Privacy Policy may be updated at any time.
+Continued use of the bot means you accept any changes.
+
+---
+
+## 10. Contact & Support
+
+For questions or data requests:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+## 11. Disclaimer
+
+RG AutoMod is provided “as is.”
+We are not responsible for:
+
+* Data loss
+* Misconfiguration
+* Issues caused by third-party platforms
+
+---
+
+© 2026 RG Studios. All rights reserved.
