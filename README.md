@@ -1,201 +1,175 @@
 <h1 align="center">🤖 RG AutoMod</h1>
 <p align="center">
-  <b>Advanced Discord Link Moderation • Fast • Secure • Automated</b><br>
-  A premium-quality bot designed to protect your Discord server from unwanted links, scams, spam, and self-promotion.
+  <b>Next-Generation Discord Security • Fast • Intelligent • Automated</b><br>
+  Protect your server from scams, malicious links, and spam — in real-time.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Bot-Live-brightgreen" />
-  <img src="https://img.shields.io/badge/Documentation-Complete-blue" />
+  <img src="https://img.shields.io/badge/Database-SQLite-blue" />
   <img src="https://img.shields.io/badge/License-Proprietary-red" />
-  <img src="https://img.shields.io/badge/Support-Server-7289da?logo=discord" />
+  <img src="https://img.shields.io/badge/Support-Active-7289da?logo=discord" />
 </p>
 
 <p align="center">
-Last Updated: December 2025
+Last Updated: 2026 • Version: v3.0
 </p>
 
 ---
 
 # 📑 Table of Contents
-- [✨ Overview](#-overview)
-- [🚀 Invite RG AutoMod](#-invite-rg-automod)
-- [🌟 Key Features](#-key-features)
-- [📚 Documentation](#-documentation)
-- [⚙️ Technical Info](#️-technical-info)
-- [🔐 License](#-license)
-- [🛡 Legal & Policies](#-legal--policies)
-- [🆘 Support](#-support)
-- [❤️ Credits](#️-credits)
+
+* [✨ Overview](#-overview)
+* [🌟 Key Features](#-key-features)
+* [🧠 Advanced Systems](#-advanced-systems)
+* [📚 Documentation](#-documentation)
+* [⚙️ Technical Info](#️-technical-info)
+* [🔐 License](#-license)
+* [🛡 Legal & Policies](#-legal--policies)
+* [🆘 Support](#-support)
+* [❤️ Credits](#️-credits)
 
 ---
 
 # ✨ Overview
-**RG AutoMod** is a high-performance Discord moderation bot built to automatically block unwanted links, scam URLs, spam, and unapproved promotions.
 
-It includes:
-- Trusted user permissions  
-- Channel allowlisting  
-- Custom whitelists  
-- Logging  
-- Optional punishment system  
-- Persistent server configuration  
-- Clean, modern Slash Commands  
+**RG AutoMod** is a high-performance Discord security bot built to automatically protect servers from:
 
-The bot is designed for **gaming communities, public servers, creators, and professional organizations** that want reliable, automated moderation with zero setup.
+* Malicious links
+* Scam URLs
+* Spam & self-promotion
+* Suspicious activity
 
-This repository contains **documentation only**.  
-The bot’s source code is **private** and protected under a proprietary license.
+Designed for **modern communities**, it delivers fast, reliable, and scalable moderation with minimal setup.
 
----
-
-# 🚀 Invite RG AutoMod
-Add the bot to your server using the official custom invite link:
-
-👉 **https://invite-rgautomod.rixstongamer.xyz**
+Unlike traditional bots, RG AutoMod uses a **database-driven architecture (SQLite)** for improved performance, stability, and long-term scalability.
 
 ---
 
 # 🌟 Key Features
 
-### 🔗 Smart Automatic Link Blocking
-- Instantly detects and deletes harmful or unwanted links  
-- Blocks scam websites, Discord invites, self-promo, and suspicious domains  
-- Extremely fast link scanning  
+### 🔗 Smart Link Protection
+
+* Detects and removes harmful links instantly
+* Blocks scams, phishing, Discord invites, and suspicious domains
+* Fast and optimized scanning system
 
 ---
 
-### 🔒 Protected Default Whitelist  
-Essential safe URLs are automatically approved, including:
-- rixstongamer.xyz  
-- rixxymc.in  
-- Official social profiles  
+### 👤 Trusted System
 
-These cannot be removed.
+* Trusted users & roles bypass protection
+* Temporary and permanent trust support
+* Ideal for moderators, creators, and verified members
 
 ---
 
-### 👤 Trusted User System  
-Allow specific users to bypass link moderation:
-- Permanent trust  
-- Temporary trust (15s, 30m, 1h, 2d, etc.)  
+### 📺 Channel Control
 
-Ideal for moderators, creators, verified members, or event winners.
+* Allow links only in selected channels
+* Automatic enforcement elsewhere
 
 ---
 
-### 📺 Channel Allowlisting  
-Choose where links *are allowed*:
-- #media  
-- #promotions  
-- #clips  
+### 📋 Custom Whitelist
 
-Everywhere else remains protected automatically.
+* Add your own domains or patterns
+* Flexible and case-insensitive matching
 
 ---
 
-### 📋 Custom Whitelist  
-Approve your own domains or URL patterns.
+### 📊 Logging System
 
-Examples:
-- `discord.gg`
-- `twitter.com`
-- `example.com/promo`
-
-Supports:
-- Partial matching  
-- Case-insensitive patterns  
+* Detailed moderation logs
+* Tracks user actions, violations, and timestamps
 
 ---
 
-### 📊 Link Deletion Logging  
-If enabled, logs include:
-- User  
-- Channel  
-- Blocked message  
-- Strike count  
-- Timestamp  
+### ⚖️ Strike-Based Moderation
 
-Helpful for moderation teams.
-
----
-
-### ⚖️ Optional Strike-Based Punishment System
-Fully configurable:
-- Custom strike limits  
-- Automatic timeouts  
-- Auto-reset after punishment  
-- Manual strike reset  
-
-Perfect for large servers.
+* Configurable punishment system
+* Automatic timeouts
+* Manual and auto-reset support
 
 ---
 
 ### 💬 Custom Warning Messages
-Make link-block warnings match your server's style.
+
+* Fully customizable warnings
+* Match your server’s style and tone
 
 ---
 
 ### 🔄 Dynamic Status
-Updates every 30 seconds showing:
-```
-Watching X servers | /help
-```
+
+* Displays live stats:
+
+  * total members
+  * total servers
+  * system status
 
 ---
 
-### 👋 Automatic Welcome Message
-When the bot joins a new server, it automatically sends:
-- Setup steps  
-- Allowed link details  
-- Commands overview  
-- Support link  
+# 🧠 Advanced Systems (v3)
+
+### 🌍 Global Scam Detection
+
+* Detects repeated scam patterns across servers
+* Improves accuracy over time
 
 ---
 
-### 💾 Persistent Configuration  
-All settings save automatically:
-- Trusted users  
-- Temporary trust expiry  
-- Allowed channels  
-- Custom whitelists  
-- Warning messages  
-- Logging settings  
-- Punishment configuration  
-- Strike counters  
+### 🚨 Raid Protection
 
-Data reloads on bot restart.
+* Detects join/message spikes
+* Helps prevent server raids
+
+---
+
+### 🧠 Reputation System
+
+* Tracks user behavior
+* Adjusts moderation dynamically
+
+---
+
+### ⚙️ Database-Driven System
+
+* SQLite-based storage (replaces JSON)
+* Faster, safer, and scalable
 
 ---
 
 # 📚 Documentation
 
-All detailed documentation can be found in the `/docs` directory:
+Full documentation available here:
 
-| Topic | File |
-|-------|------|
-| 🔍 Overview | [docs/overview.md](docs/overview.md) |
-| ✨ Features | [docs/features.md](docs/features.md) |
-| 📝 Commands | [docs/commands.md](docs/commands.md) |
-| ⚙️ Setup Guide | [docs/setup.md](docs/setup.md) |
-| 🔐 Permissions | [docs/permissions.md](docs/permissions.md) |
-| 🛠 Changelog | [docs/changelog.md](docs/changelog.md) |
-| 🆘 Support | [docs/support.md](docs/support.md) |
+👉 https://github.com/iamrippon/RG-AutoMod-Docs
+
+Includes:
+
+* Features
+* Commands
+* Setup guide
+* Changelog
+* Support
 
 ---
 
 # ⚙️ Technical Info
-- Language: Python  
-- Framework: discord.py  
-- Platform: Discord Bot API  
-- Storage: JSON-based persistent configuration  
-- Status update interval: 30 seconds  
-- Temporary trust refresh: every minute  
+
+* Language: Python
+* Framework: discord.py
+* Database: SQLite
+* Architecture: Modular (bot.py + database.py)
+* Command System: Slash + Mention
 
 ---
 
 # 🔐 License
-This project is **closed-source** and protected under a **Proprietary License**.  
+
+This project is **closed-source** and protected under a **Proprietary License**.
+
 You may not copy, modify, redistribute, or reverse-engineer the bot.
 
 Full license → [legal/LICENSE.md](legal/LICENSE.md)
@@ -203,23 +177,21 @@ Full license → [legal/LICENSE.md](legal/LICENSE.md)
 ---
 
 # 🛡 Legal & Policies
-ToS → [legal/TERMS.md](legal/TERMS.md)  
-Privacy Policy → [legal/PRIVACY.md](legal/PRIVACY.md)
 
-These documents explain usage rules, data handling, permissions, and responsibilities.
+ToS → [legal/TERMS.md](legal/TERMS.md)
+Privacy Policy → [legal/PRIVACY.md](legal/PRIVACY.md)
 
 ---
 
 # 🆘 Support
+
 Need help?
 
-Join the official support server:
-
-👉 **https://dsc.gg/rixstongamer**
+👉 https://discord.gg/GFGCn2mMrE
 
 ---
 
 # ❤️ Credits
-Created with ❤️ by **RixStonGamer**  
-Maintained & documented with care.
 
+Developed by **RixStonGamer**
+Powered by **RG Studios**
