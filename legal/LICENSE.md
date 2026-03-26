@@ -1,75 +1,76 @@
-# RG AutoMod — License Agreement
-Proprietary Software License  
-Copyright © 2025 RixStonGamer. All rights reserved.
+# 🔐 RG AutoMod — License
 
-This software and all associated files, assets, and documentation (collectively “RG AutoMod”) are the exclusive property of the owner, **RixStonGamer**.
+Copyright (c) 2026 RG Studios
 
-By using RG AutoMod, you agree to the following terms:
+All rights reserved.
 
 ---
 
-## 1. Restrictions
-Unless you have written permission from the owner, **you may NOT**:
+## 📜 Overview
 
-- Copy, distribute, or share the source code  
-- Modify, decompile, reverse engineer, or recreate the bot  
-- Sell, resell, sublicense, or commercially exploit the bot  
-- Host or distribute modified versions of the bot  
-- Claim ownership of the bot or its features  
+RG AutoMod is proprietary software developed and owned by **RG Studios**.
 
-RG AutoMod’s source code is **not open-source** and is protected under this proprietary license.
+This repository contains documentation and related materials only.
+The bot’s source code is **private and not publicly distributed**.
 
 ---
 
-## 2. Permitted Use
+## 🚫 Restrictions
+
+You are **NOT allowed** to:
+
+* Copy, reproduce, or redistribute any part of this project
+* Modify, reverse-engineer, or decompile the bot
+* Use the bot’s branding, name, or assets without permission
+* Create derivative works based on RG AutoMod
+
+---
+
+## ✅ Permitted Use
+
 You are allowed to:
 
-- Invite and use the bot on Discord servers  
-- Configure the bot using available commands  
-- Access public documentation and support resources  
-
-You are **not granted** any rights to the underlying source code.
+* Use RG AutoMod in your Discord server
+* Access public documentation
+* Interact with the bot as intended
 
 ---
 
-## 3. Ownership
-All rights, titles, and interests in RG AutoMod — including source code, branding, documentation, and assets — belong solely to **RixStonGamer**.
+## ⚠️ No Warranty
 
-Users gain **no ownership rights** by using the bot.
+RG AutoMod is provided **“as is”**, without warranty of any kind.
 
----
+RG Studios is not responsible for:
 
-## 4. Liability
-The bot is provided **“as is”** without warranty of any kind.  
-The owner is not responsible for:
-
-- Data loss  
-- Misconfigured permissions  
-- Downtime or outages  
-- Incorrect usage of the bot  
-- Any harm or damage caused by users or third parties  
-
-Use at your own discretion.
+* Data loss
+* Misuse or misconfiguration
+* Damages caused by usage of the bot
 
 ---
 
-## 5. Termination
-The bot owner may restrict or revoke access to RG AutoMod at any time if:
+## 🔒 Intellectual Property
 
-- The bot is abused  
-- These terms are violated  
-- Discord policies require removal  
-
-When removed from a server, all stored configuration data for that server is deleted.
+All rights, title, and interest in RG AutoMod — including branding, design, and systems — remain the exclusive property of **RG Studios**.
 
 ---
 
-## 6. Modifications to License
-The license may be updated at any time. Continued use of the bot implies acceptance of the latest terms.
+## 📌 Termination
+
+We reserve the right to:
+
+* Revoke access to the bot
+* Restrict usage
+
+If these terms are violated.
 
 ---
 
-## 7. Contact
-For permissions, licensing requests, or general inquiries:  
-**Support Server:** https://dsc.gg/rixstongamer  
-**Owner:** RixStonGamer
+## 📬 Contact
+
+For licensing inquiries or permissions:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+© 2026 RG Studios. All rights reserved.
