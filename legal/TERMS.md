@@ -1,84 +1,114 @@
-# RG AutoMod — Terms of Service
+# 📜 RG AutoMod — Terms of Service
 
-Last Updated: December 2025
-
-Thank you for using RG AutoMod. By adding or using this bot, you agree to the following Terms of Service. If you do not agree, please remove the bot from your server.
+Last Updated: 2026
 
 ---
 
-## 1. Agreement to Terms
-By inviting or interacting with RG AutoMod, you confirm that you:
-- Are authorized to manage a Discord server  
-- Agree to follow these Terms  
-- Agree to follow Discord’s Terms of Service and Community Guidelines  
+## 1. Introduction
+
+By inviting or using **RG AutoMod**, you agree to these Terms of Service.
+If you do not agree, you must remove the bot from your server.
+
+RG AutoMod is developed and maintained by **RG Studios**.
 
 ---
 
-## 2. Bot Functionality
-RG AutoMod is a link moderation bot designed to:
-- Block unwanted, harmful, or unapproved links  
-- Log deleted messages (if logging is enabled)  
-- Manage whitelists, trusted users, channel settings, and punishment rules  
+## 2. Usage
 
-The bot may update features over time.
+You agree to use RG AutoMod in compliance with:
 
----
+* Discord Terms of Service
+* Discord Community Guidelines
+* All applicable laws and regulations
 
-## 3. Acceptable Use
-You agree **NOT** to:
-- Use RG AutoMod for unlawful, harmful, or abusive purposes  
-- Attempt to reverse-engineer, exploit, or replicate the bot  
-- Use the bot to harass, harm, or attack others  
-- Circumvent any system or protection offered by the bot  
+You may not use the bot for:
 
-Servers using the bot must comply with Discord’s Terms of Service.
+* Illegal activities
+* Harassment or abuse
+* Attempting to exploit or disrupt the bot
 
 ---
 
-## 4. Data Usage
-RG AutoMod only stores the minimum necessary data required to function:
-- Trusted user IDs  
-- Allowed channel IDs  
-- Whitelisted patterns  
-- Warning messages  
-- Punishment settings  
-- Logging channel configuration  
-- Strike counts  
+## 3. Data Usage
 
-**The bot does NOT store message content permanently.**  
-Blocked messages are processed instantly and deleted — only logs (if enabled by admins) may reflect message content inside your server.
+RG AutoMod stores limited data required for functionality, including:
 
-No data is shared with third parties.
+* Guild (server) IDs
+* User IDs (for moderation systems)
+* Channel and role IDs
+* Configuration settings (whitelist, logs, etc.)
 
-For full details, see the Privacy Policy.
+This data is used solely to provide bot functionality.
+
+We do **not** sell or share your data with third parties.
+
+---
+
+## 4. Moderation Responsibility
+
+RG AutoMod provides automated moderation tools.
+However:
+
+* Server owners and admins are fully responsible for how the bot is configured
+* RG Studios is not responsible for moderation actions taken by the bot
 
 ---
 
 ## 5. Availability
-RG AutoMod is provided **“as is”** with no guarantee of uptime, performance, or future availability.  
-The bot may go offline due to maintenance, outages, updates, or technical issues.
+
+We aim to keep RG AutoMod stable and available, but:
+
+* Uptime is not guaranteed
+* Features may change, be added, or removed at any time
+* Temporary downtime may occur during updates
 
 ---
 
-## 6. Liability
-The bot owner is **not responsible** for:
-- Loss of server data  
-- Misconfigured punishment settings  
-- Incorrect bot usage  
-- Actions taken by server administrators  
-- Behavior of Discord users  
+## 6. Premium Features (If Applicable)
 
-Use the bot at your own discretion.
+Some features may be part of paid plans:
+
+* Access to premium features may depend on active subscription
+* Prices and plans may change at any time
+* No refunds are guaranteed unless explicitly stated
 
 ---
 
-## 7. Changes to Terms
-These Terms may be updated at any time without prior notice.  
-Continued use of the bot means you accept any updated Terms.
+## 7. Termination
+
+We reserve the right to:
+
+* Restrict or block access to the bot
+* Remove service from any server
+
+If the Terms are violated.
 
 ---
 
-## 8. Contact
-For questions or support, join the support server:
+## 8. Changes to Terms
 
-**https://dsc.gg/rixstongamer**
+These Terms may be updated at any time.
+Continued use of the bot means you accept the updated Terms.
+
+---
+
+## 9. Contact & Support
+
+For support or questions:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+## 10. Disclaimer
+
+RG AutoMod is provided **“as is”** without warranties of any kind.
+We are not liable for:
+
+* Data loss
+* Misconfiguration
+* Server damage or moderation outcomes
+
+---
+
+© 2026 RG Studios. All rights reserved.
