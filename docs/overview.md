@@ -1,36 +1,85 @@
-# 📘 Overview — RG AutoMod
+# ✨ RG AutoMod — Overview
 
-RG AutoMod is a powerful Discord moderation bot focused on **automatic link detection and removal**, backed by flexible whitelist controls, trusted user permissions, logging, and optional punishment tools.
+**RG AutoMod** is a powerful, modern Discord security bot designed to protect your server from malicious links, scams, and spam — automatically and in real-time.
 
-This documentation explains how the bot works and how server admins can fully configure it.
-
----
-
-## ✨ Core Goals
-- Keep communities clean  
-- Stop spam and scam links  
-- Give admins full control  
-- Be fast, lightweight, and reliable  
-- Require zero setup by default  
+Built with performance, reliability, and scalability in mind, RG AutoMod helps server owners maintain a safe and well-managed community with minimal effort.
 
 ---
 
-## ⚡ Feature Categories
-- 🚫 Link Protection System  
-- 🔒 Default Whitelist  
-- 👤 User Trust System  
-- 📺 Channel Allowlist  
-- ✅ Custom Whitelist  
-- 📊 Logging System  
-- ⚖️ Auto-Punishment System  
-- 💬 Custom Warnings  
-- 🔄 Dynamic Status  
-- 👋 Welcome System  
-- 💾 Persistent Storage  
-- 📈 Full Statistics (/status)
+## 🚀 What RG AutoMod Does
+
+RG AutoMod automatically:
+
+* Detects and removes harmful or unwanted links
+* Blocks scam websites and suspicious domains
+* Prevents spam and self-promotion
+* Enforces moderation rules instantly
+
+All without requiring constant manual moderation.
 
 ---
 
-To learn about the full behavior and features:
+## ⚡ Why Choose RG AutoMod?
 
-➡️ Continue reading: [Full Feature Documentation](features.md)
+Unlike traditional moderation bots, RG AutoMod focuses on:
+
+* ⚡ **Speed** — instant link detection and removal
+* 🔒 **Security** — strong protection against scams and malicious content
+* 🧠 **Smart Moderation** — configurable rules and strike-based system
+* ⚙️ **Ease of Use** — simple setup with powerful control
+
+---
+
+## 🧩 Core Systems
+
+RG AutoMod includes several key systems:
+
+* 🔗 **Link Protection System** — blocks unwanted and dangerous links
+* 👤 **Trusted System** — allows selected users/roles to bypass protection
+* 📺 **Channel Control System** — allow links only in specific channels
+* 📋 **Whitelist System** — approve safe domains or patterns
+* 📊 **Logging System** — track moderation actions
+* ⚖️ **Strike System** — apply punishments based on violations
+
+---
+
+## 🎯 Who Is It For?
+
+RG AutoMod is ideal for:
+
+* Gaming communities
+* Public Discord servers
+* Content creators & streamers
+* Professional or managed communities
+
+---
+
+## 🛠 Built for Reliability
+
+RG AutoMod uses a **database-driven architecture (SQLite)** to ensure:
+
+* Persistent data storage
+* Faster performance
+* Greater stability compared to traditional systems
+
+---
+
+## 📚 Next Steps
+
+To get started:
+
+👉 Read the setup guide: `docs/setup.md`
+👉 Explore commands: `docs/commands.md`
+👉 View full features: `docs/features.md`
+
+---
+
+## 🆘 Need Help?
+
+Join our support server:
+
+👉 https://discord.gg/GFGCn2mMrE
+
+---
+
+Powered by **RG Studios**
